@@ -6,7 +6,7 @@
  * Created..: 02/05/2022
  */
 
-
+/* declare class student */
 public class Student {
 
 
