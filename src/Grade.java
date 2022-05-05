@@ -41,4 +41,30 @@ public class Grade {
     public String getWebGrade() {return webGrade;}
     public String getMathGrade() {return mathGrade;}
     public String getAlgGrade() {return algGrade;}
+
+    /* declare method to return the correspondent grade for each module */
+    public static String getLetterGrade(double score) {
+
+        String grade = "";
+
+        if (score < 0 || score > 100){
+            grade = "E"; // error
+        }
+        else if (score >= 70) {
+            grade = "A";
+        }
+        else if (score >= 60) {
+            grade = "B";
+        }
+        else if (score >= 50) {
+            grade = "C";
+        }
+        else if (score >= 40) {
+            grade = "D";
+        }
+        else if( score < 40) {
+            grade = "F";
+        }
+        return grade;
+    }
 }
