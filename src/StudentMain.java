@@ -6,8 +6,12 @@
  * Created..: 02/05/2022
  */
 
+import java.util.ArrayList;
+
 /* declare class main app student */
 public class StudentMain {
 
-
+    /* create array list to store students data */
+    ArrayList<Student> students = new ArrayList<>();
+    
 }
