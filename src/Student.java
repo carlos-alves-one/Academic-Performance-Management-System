@@ -19,24 +19,22 @@ public class Student {
     private final String name;
     private final String department;
     private final int age;
-    private final String userName;
+    //private final String userName;
     private final int studentNumber;
     private final boolean fullTime;
 
     /* declare the construction function for this class */
-    public Student(Object average, double programming, double webDev, double maths,
-                       double algorithms, String name, String department, int age, String userName,
-                       int studentNumber, boolean fullTime) {
-        this.average = average;
+    public Student (String name, String department, int age, int studentNumber, boolean fullTime,
+                    double programming, double webDev, double maths, double algorithms) {
+        this.name = name;
+        this.age = age;
+        this.department = department;
+        this.studentNumber = studentNumber;
+        this.fullTime = fullTime;
         this.programming = programming;
         this.webDev = webDev;
         this.maths = maths;
         this.algorithms = algorithms;
-        this.name = name;
-        this.department = department;
-        this.age = age;
-        this.userName = userName;
-        this.studentNumber = studentNumber;
-        this.fullTime = fullTime;
+        this.average = Average.calcAverage(programming, webDev, maths, algorithms);
     }
 }
