@@ -34,5 +34,8 @@ public class StudentMain {
                 45632, false, 62, 51, 43, 43));
     }
 
+    /* declare variable to be used with the menu */
+    String choice;
+
     
 }
