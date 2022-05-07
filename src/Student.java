@@ -6,8 +6,13 @@
  * Created..: 02/05/2022
  */
 
+import java.util.ArrayList;
+
 /* declare class student */
 public class Student {
+
+    /* create ArrayList to store student grade for each module */
+    public ArrayList<Grade> grades = new ArrayList<>();
 
     /* declare instances variables */
     private final Object average;
@@ -23,7 +28,7 @@ public class Student {
     private final int studentNumber;
     private final boolean fullTime;
 
-    /* declare setters and getters */
+    /* declare getters */
     static boolean isFailedModule() {return failedModule;}
     public double getProgramming() {return programming;}
     public double getWebDev() {return webDev;}
@@ -46,5 +51,8 @@ public class Student {
         this.maths = maths;
         this.algorithms = algorithms;
         this.average = Average.calcAverage(programming, webDev, maths, algorithms);
+
+        /* add to array the grade from the student */
+        grades.add(new Grade(programming, webDev, maths, algorithms));
     }
 }
