@@ -7,6 +7,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 /* declare class student */
 public class Student {
@@ -24,7 +25,7 @@ public class Student {
     private final String name;
     private final String department;
     private final int age;
-    //private final String userName;
+    private final String userName;
     private final int studentNumber;
     private final boolean fullTime;
 
@@ -54,8 +55,20 @@ public class Student {
 
         /* add to array the grade from the student */
         //grades.add(new Grade(programming, webDev, maths, algorithms));
+
+        /* convert the student number to a string to build the username */
+        String studentNumber_String = String.valueOf(studentNumber);
+        /* store the first letter of the name the student */
+        String nameLowerCase = this.name.substring(0,1);
+        /* find the position is the space between the name and the surname */
+        int posSpace = this.name.indexOf(" ");
+        /* store the 4 letters of the student surname */
+        String surnameLowerCase = this.name.substring(posSpace + 1, posSpace + 5);
+        /* create the username using concatenation method */
+        this.userName = nameLowerCase.toLowerCase(Locale.ROOT) + surnameLowerCase.toLowerCase(Locale.ROOT) +
+                studentNumber_String.substring(0,3);
     }
-    
+
     /* override method toString */
     public String toString() {
         return "Student Name = " + name + ", Department = " + department + ", Age = " +
