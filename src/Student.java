@@ -53,6 +53,16 @@ public class Student {
         this.average = Average.calcAverage(programming, webDev, maths, algorithms);
 
         /* add to array the grade from the student */
-        grades.add(new Grade(programming, webDev, maths, algorithms));
+        //grades.add(new Grade(programming, webDev, maths, algorithms));
+    }
+    
+    /* override method toString */
+    public String toString() {
+        return "Student Name = " + name + ", Department = " + department + ", Age = " +
+                age + "\n" + " -> Username = " + userName + ", Student No. " + studentNumber + ", Full Time = " +
+                fullTime + "\n" + " -> Programming = " + programming + "% " + grades.get(0).getProgGrade() +
+                ", Web Dev = " + webDev + "% " + grades.get(0).getWebGrade() +
+                ", Maths = " + maths + "% " + grades.get(0).getMathGrade() +
+                ", Algorithms = " + algorithms  + "% " + grades.get(0).getAlgGrade();
     }
 }
