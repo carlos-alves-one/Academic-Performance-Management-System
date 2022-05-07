@@ -53,28 +53,28 @@ public class StudentMain {
 
                 case "1":
                     System.out.println(">> Report of all students with grades for all modules:");
-                    // print out the results
-                    //System.out.println(Report.getReport(students, Integer.parseInt(choice)));
+                    /* print out the results */
+                    System.out.println(Report.getReport(students, Integer.parseInt(choice)));
                     break;
                 case "2":
                     System.out.println(">> Report of all students with failed module:");
-                    // print out the results
-                    //System.out.println(Report.getReport(students, Integer.parseInt(choice)));
-                    // in case we don't have a students to print out user receives a message
+                    /* print out the results */
+                    System.out.println(Report.getReport(students, Integer.parseInt(choice)));
+                    /* in case we don't have a students to print out user receives a message */
                     //if (!Student.isFailedModule()) {
                         System.out.println("** Students not found");
                     //}
                     break;
                 case "3":
                     System.out.println(">> Report average grade for each student:");
-                    // print out the results
-                    //System.out.println(Report.getReport(students, Integer.parseInt(choice)));
+                    /* print out the results */
+                    System.out.println(Report.getReport(students, Integer.parseInt(choice)));
                     break;
                 case "4":
                     System.out.println(">> Add a new students: ");
-                    // get input from the user to add a new student
-                    //System.out.println(Report.getReport(students, Integer.parseInt(choice)));
-                    // inform user the student was added to the list of students
+                    /* get input from the user to add a new student */
+                    System.out.println(Report.getReport(students, Integer.parseInt(choice)));
+                    /* inform user the student was added to the list of students */
                     System.out.println("** New student added successfully **");
                     break;
                 case "h":
