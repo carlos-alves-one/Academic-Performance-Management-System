@@ -23,6 +23,16 @@ public class Student {
     private final int studentNumber;
     private final boolean fullTime;
 
+    /* declare setters and getters */
+    static boolean isFailedModule() {return failedModule;}
+    public double getProgramming() {return programming;}
+    public double getWebDev() {return webDev;}
+    public double getMaths() {return maths;}
+    public double getAlgorithms() {return algorithms;}
+    public double getAverage() {return (double) average;}
+    public String getName() {return name;}
+    public void setFailedModule(boolean failedModule) {this.failedModule = failedModule;}
+
     /* declare the construction function for this class */
     public Student (String name, String department, int age, int studentNumber, boolean fullTime,
                     double programming, double webDev, double maths, double algorithms) {
