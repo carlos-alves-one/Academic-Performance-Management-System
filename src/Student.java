@@ -54,7 +54,7 @@ public class Student {
         this.average = Average.calcAverage(programming, webDev, maths, algorithms);
 
         /* add to array the grade from the student */
-        //grades.add(new Grade(programming, webDev, maths, algorithms));
+        grades.add(new Grade(programming, webDev, maths, algorithms));
 
         /* convert the student number to a string to build the username */
         String studentNumber_String = String.valueOf(studentNumber);

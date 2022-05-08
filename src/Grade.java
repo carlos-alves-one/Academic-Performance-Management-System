@@ -20,8 +20,7 @@ public class Grade {
     public String algGrade;
 
     /* declare the construction function for this class */
-    public Grade(double programming, double webDev, double maths, double algorithms, String progGrade,
-                 String webGrade, String mathGrade, String algGrade) {
+    public Grade(double programming, double webDev, double maths, double algorithms) {
         this.programming = programming;
         this.webDev = webDev;
         this.maths = maths;
