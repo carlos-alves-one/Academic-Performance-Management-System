@@ -61,9 +61,9 @@ public class StudentMain {
                     /* print out the results */
                     System.out.println(Report.getReport(students, Integer.parseInt(choice)));
                     /* in case we don't have a students to print out user receives a message */
-                    //if (!Student.isFailedModule()) {
+                    if (!Student.isFailedModule()) {
                         System.out.println("** Students not found");
-                    //}
+                    }
                     break;
                 case "3":
                     System.out.println(">> Report average grade for each student:");
