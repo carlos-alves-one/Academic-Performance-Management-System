@@ -25,17 +25,13 @@ public class Grade {
         this.webDev = webDev;
         this.maths = maths;
         this.algorithms = algorithms;
-        this.progGrade = progGrade;
-        this.webGrade = webGrade;
-        this.mathGrade = mathGrade;
-        this.algGrade = algGrade;
+        this.progGrade = getLetterGrade(programming);
+        this.webGrade = getLetterGrade(webDev);
+        this.mathGrade = getLetterGrade(maths);
+        this.algGrade = getLetterGrade(algorithms);
     }
 
     /* declare getters */
-    public double getProgramming() {return programming;}
-    public double getWebDev() {return webDev;}
-    public double getMaths() {return maths;}
-    public double getAlgorithms() {return algorithms;}
     public String getProgGrade() {return progGrade;}
     public String getWebGrade() {return webGrade;}
     public String getMathGrade() {return mathGrade;}
