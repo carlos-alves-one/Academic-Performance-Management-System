@@ -3,7 +3,7 @@
 
 ## Overview
 
-The Academic Performance Management System (APMS) is designed to facilitate the management of student data within educational institutions. This Java-based system enables the handling of student personal information, academic grades, and the generation of comprehensive academic reports and performance averages.
+The Academic Performance Management System (APMS) is designed to facilitate student data management within educational institutions. This Java-based system enables handling student personal information, academic grades, and the generation of comprehensive academic reports and performance averages.
 
 ## Features
 
